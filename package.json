@@ -1,0 +1,24 @@
+{
+  "name": "PF1_icomi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kei-shimojo/PF1_icomi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kei-shimojo/PF1_icomi/issues"
+  },
+  "homepage": "https://github.com/kei-shimojo/PF1_icomi#readme",
+  "devDependencies": {
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
