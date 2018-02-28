@@ -1,13 +1,14 @@
 .c-media__logobox {
-  position: relative;
   width: 206px;
-  height: 130px;
+  height: 115px;
+  padding-bottom: 15px;
 
   &__img {
-    position: absolute;
+    margin: 0 auto;
     background-image: url(../../img/logo.svg);
     width: 144px;
     height: 95px;
     background-repeat: no-repeat;
+
   }
 }

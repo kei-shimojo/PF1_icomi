@@ -1,10 +1,20 @@
 .c-grid__arrow {
   position: absolute;
   left: 180px;
-  top: 5px;
+  top: 20px;
+  text-align: center;
   box-sizing: border-box;
   border: 8px solid transparent;
   border-left: 8px solid #fff;
 
+  &__menu {
+    position: absolute;
+    left: 180px;
+    top: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+  }
 
 }

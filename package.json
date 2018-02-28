@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kei-shimojo/PF1_icomi#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^3.1.0"
   }
