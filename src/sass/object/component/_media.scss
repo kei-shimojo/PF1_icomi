@@ -1,7 +1,6 @@
 .c-media__logobox {
   width: 206px;
   height: 115px;
-  padding-bottom: 15px;
 
   &__img {
     margin: 0 auto;
@@ -10,5 +9,15 @@
     height: 95px;
     background-repeat: no-repeat;
 
+  }
+}
+
+.c-media__main__box {
+  padding-bottom: 10px;
+  width: 850px;
+  height: 320px;
+
+  &__img {
+    background-image: url(../../img/top-photo.png);
   }
 }

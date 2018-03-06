@@ -8,13 +8,14 @@
   border-left: 8px solid #fff;
 
   &__menu {
+    width: 0;
+    height: 0;
     position: absolute;
     left: 180px;
-    top: 100px;
-    text-align: center;
+    top: 27px;
     box-sizing: border-box;
     border: 8px solid transparent;
-    border-left: 8px solid #fff;
+    border-left: 8px solid #666;
   }
 
 }

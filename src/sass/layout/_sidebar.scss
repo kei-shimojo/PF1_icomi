@@ -1,3 +1,9 @@
+.l-sidebar {
+  float: left;
+  width:205px;
+}
+
+
 .l-sidebar__entry {
   position: relative;
   width: 202px;
@@ -30,16 +36,16 @@
 
 
 
-.l-sidebar__menu {
-  position: relative;
-  list-style: none;
-  width: 205px;
-  height: 75px;
-  background: linear-gradient(180deg, #fff, #eeeeef);
+.l-sidebar__bottom {
+  padding-top: 5px;
 
-  &:first-child {
-    padding-top: 10px;
-  }
+    & > li {
+    position: relative;
+    list-style: none;
+    width: 205px;
+    height: 75px;
+    background: linear-gradient(180deg, #fff, #eeeeef);
+    }
 
   &__ja {
     font-size: 19px;
