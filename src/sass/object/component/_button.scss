@@ -33,3 +33,25 @@
       }
     }
   }
+
+.c-button__entry {
+  width: 170px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #64bf5d;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+
+
+  &__btn {
+    padding-top: 4px;
+    padding-left: 40px;
+    height: 24px;
+    background-image: url(../../img/entry-minlog.png);
+    background-repeat: no-repeat;
+    background-position: left 10px top 2px;
+    cursor: pointer;
+  }
+}

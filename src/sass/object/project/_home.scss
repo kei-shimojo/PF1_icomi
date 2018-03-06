@@ -1,0 +1,121 @@
+.p-home__contents {
+  float: left;
+  width: 995px;
+
+  &__top {
+    padding-bottom: 10px;
+    width: 860px;
+    height: 320px;
+    margin: 0 auto;
+
+    &__img {
+      width: 860px;
+      height: 320px;
+      background-image: url(../../img/top-photo.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+
+.p-home__contents__middle {
+  width: 860px;
+  height: 100%;
+  margin: 0 auto;
+
+  &__entry {
+    list-style: none;
+    width: 860px;
+    height: 225px;
+
+    &__left {
+      float: left;
+      width: 412px;
+      height: 225px;
+      border: 5px solid #ea6cd0;
+      background-color: #f5a7cd;
+      background-image: url(../../img/entry-logo.png);
+      background-repeat: no-repeat;
+      background-position: right 4px top 7px;
+      margin-right: 6px;
+
+      &__ttl {
+        padding-top: 40px;
+        line-height: 35px;
+        text-align: center;
+
+        &__small {
+          color: #fff;
+          font-size: 18px;
+        }
+
+        &__big {
+          color: #ffff00;
+          font-size: 40px;
+          font-weight: bold;
+        }
+      }
+
+      &__txt {
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        padding-top: 15px;
+      }
+    }
+  }
+}
+
+.p-home__contents__middle__small {
+  float: left;
+  width: 198px;
+  height: 225px;
+  margin-right: 6px;
+
+  $pages: (
+    guide: #537050,
+    company: #4b6683,
+  );
+
+  &__bg {
+    width: 198px;
+    height: 225px;
+    background-repeat: no-repeat;
+  }
+
+  &.is-guide & {
+    &__bg {
+      background-color: rgba(75, 102, 64, 0.75);
+      background-image: url(../../img/guide-logo.png);
+    }
+  }
+
+
+
+  @each $page, $color in $pages {
+    &.is-#{$page} {
+      border: 5px solid #{$color};
+      background-image: url(../../img/#{$page}-bg.png);
+    }
+  }
+}
+
+.p-home__contents__ttl {
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  padding-top: 160px
+}
+
+.p-home__contents__txt {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+
+
+

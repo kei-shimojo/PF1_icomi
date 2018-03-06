@@ -1,0 +1,39 @@
+.p-home__contents {
+  float: left;
+  width: 995px;
+
+  &__top {
+    padding-bottom: 10px;
+    width: 850px;
+    height: 320px;
+    margin: 0 auto;
+
+    &__img {
+      width: 850px;
+      height: 320px;
+      background-image: url(../../img/top-photo.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+
+.p-home__contents__middle {
+  width: 850px;
+  height: 100%;
+
+  &__top {
+    width: 850px;
+    height: 225px;
+
+    &__left {
+      float: left;
+      width: 412px;
+      height: 225px;
+      border: 10px solid #ea6cd0;
+      background-color: #f5a7cd;
+
+    }
+  }
+}
