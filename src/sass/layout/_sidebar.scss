@@ -1,6 +1,10 @@
 .l-sidebar {
   float: left;
   width:205px;
+
+  @media screen and (max-width: $phone-width) {
+    display: none;
+  }
 }
 
 

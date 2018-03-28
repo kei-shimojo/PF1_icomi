@@ -22,10 +22,21 @@
     width: 0;
     height: 0;
     position: absolute;
-    left: 870px;
-    top: 515px;
+    left: 89%;
+    top: 164px;
     box-sizing: border-box;
     border: 8px solid transparent;
     border-left: 8px solid #fff;
+  }
+
+  &__foot {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -15px;
+    top: -1px;
+    box-sizing: border-box;
+    border: 8px solid transparent;
+    border-left: 8px solid #ea6cb0;
   }
 }

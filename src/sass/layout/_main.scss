@@ -1,6 +1,13 @@
+$phone-width: 480px;
+
+
 .l-main__wrapper {
   width: 1200px;
   margin: 0 auto;
+
+  @media screen and (max-width: $phone-width) {
+    width: 100%;
+  }
 }
 
 

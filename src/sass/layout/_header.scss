@@ -1,3 +1,13 @@
+$phone-width: 480px;
+
+
 .l-header {
-  
+display: none;
+
+  @media screen and (max-width: $phone-width) {
+    display:block;
+    max-width: $phone-width;
+    width: 100%;
+    height: 70px;
+  }
 }

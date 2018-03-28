@@ -1,3 +1,5 @@
+$phone-width: 480px;
+
 .c-media__logobox {
   width: 206px;
   height: 115px;
@@ -9,6 +11,10 @@
     height: 95px;
     background-repeat: no-repeat;
 
+    @media screen and (max-width: $phone-width) {
+      width: 50px;
+      height: 40px;
+    }
   }
 }
 

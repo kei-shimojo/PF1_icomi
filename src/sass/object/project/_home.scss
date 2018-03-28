@@ -1,6 +1,15 @@
+$phone-width: 480px;
+
+
 .p-home__contents {
   float: left;
   width: 995px;
+
+  @media screen and (max-width: $phone-width) {
+    float: none;
+    max-width: $phone-width;
+    width: 100%;
+  }
 
   &__top {
     padding-bottom: 10px;
@@ -8,11 +17,24 @@
     height: 320px;
     margin: 0 auto;
 
+    @media screen and (max-width: $phone-width) {
+      max-width: $phone-width;
+      width: 100%;
+      height: auto;
+    }
+
     &__img {
       width: 860px;
       height: 320px;
       background-image: url(../../img/top-photo.png);
       background-repeat: no-repeat;
+
+      @media screen and (max-width: $phone-width) {
+      width: 100%;
+      height: auto;
+      padding-top: 37.764%;
+      background-size: contain;
+      }
     }
   }
 }
@@ -25,9 +47,14 @@
   margin: 0 auto;
 
   &__top {
+    position: relative;
     list-style: none;
     width: 860px;
     height: 225px;
+
+    @media screen and (max-width: $phone-width) {
+      height: 450px;
+    }
 
     &__left {
       float: left;
@@ -40,6 +67,11 @@
       background-position: right 4px top 7px;
       margin-right: 6px;
 
+      @media screen and (max-width: $phone-width) {
+        float: none;
+
+      }
+
       &__ttl {
         padding-top: 40px;
         line-height: 35px;
@@ -48,6 +80,7 @@
         &__small {
           color: #fff;
           font-size: 18px;
+          }
         }
 
         &__big {
@@ -64,7 +97,6 @@
         padding-top: 15px;
       }
     }
-  }
 
   &__bottom {
     list-style: none;
@@ -72,10 +104,15 @@
     height: 100%;
     margin: 0 auto;
     padding-top: 15px;
+
+    @media screen and (max-width: $phone-width) {
+      height: 450px;
+    }
   }
 }
 
 .p-home__contents__middle__small {
+  position: relative;
   float: left;
   width: 198px;
   height: 225px;
@@ -137,11 +174,16 @@
 
 .p-home__contents__middle__large__right {
   float: left;
+  position: relative;
   width: 412px;
   height: 225px;
   border: 5px solid #65605D;
   background-image: url(../../img/business-bg.png);
   background-repeat: no-repeat;
+
+  @media screen and (max-width: $phone-width) {
+    float: none;
+  }
 
   &__bg {
     width: 412px;
