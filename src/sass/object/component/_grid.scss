@@ -1,3 +1,5 @@
+$phone-width: 480px;
+
 .c-grid__arrow {
   position: absolute;
   left: 180px;
@@ -38,5 +40,9 @@
     box-sizing: border-box;
     border: 8px solid transparent;
     border-left: 8px solid #ea6cb0;
+
+    @media screen and (max-width: $phone-width) {
+      display: none;
+    }
   }
 }

@@ -7,8 +7,8 @@ $phone-width: 480px;
 
   @media screen and (max-width: $phone-width) {
     float: none;
-    max-width: $phone-width;
     width: 100%;
+    margin: 0 auto;
   }
 
   &__top {
@@ -39,12 +39,14 @@ $phone-width: 480px;
   }
 }
 
-
-
 .p-home__contents__middle {
   width: 860px;
   height: 100%;
   margin: 0 auto;
+
+  @media screen and (max-width: $phone-width) {
+    width: 100%;
+  }
 
   &__top {
     position: relative;
@@ -53,7 +55,8 @@ $phone-width: 480px;
     height: 225px;
 
     @media screen and (max-width: $phone-width) {
-      height: 450px;
+      height: 100%;
+      width: 100%;
     }
 
     &__left {
@@ -69,7 +72,8 @@ $phone-width: 480px;
 
       @media screen and (max-width: $phone-width) {
         float: none;
-
+        // width: 100%;
+        // height: 100%;
       }
 
       &__ttl {
@@ -81,7 +85,6 @@ $phone-width: 480px;
           color: #fff;
           font-size: 18px;
           }
-        }
 
         &__big {
           color: #ffff00;
@@ -97,7 +100,7 @@ $phone-width: 480px;
         padding-top: 15px;
       }
     }
-
+  }
   &__bottom {
     list-style: none;
     width: 860px;
@@ -106,7 +109,8 @@ $phone-width: 480px;
     padding-top: 15px;
 
     @media screen and (max-width: $phone-width) {
-      height: 450px;
+      padding-top: 1px;
+      width: 100%;
     }
   }
 }
@@ -117,6 +121,10 @@ $phone-width: 480px;
   width: 198px;
   height: 225px;
   margin-right: 6px;
+
+  @media screen and (max-width: $phone-width) {
+    margin-top: 5px;
+  }
 
   $pages: (
     guide: #537050,
@@ -159,11 +167,6 @@ $phone-width: 480px;
     }
   }
 
-
-
-
-
-
   @each $page, $color in $pages {
     &.is-#{$page} {
       border: 5px solid #{$color};
@@ -183,6 +186,7 @@ $phone-width: 480px;
 
   @media screen and (max-width: $phone-width) {
     float: none;
+    margin-top: 245px;
   }
 
   &__bg {
@@ -214,10 +218,18 @@ $phone-width: 480px;
   float: left;
   width: 995px;
 
+  @media screen and (max-width: $phone-width) {
+    width: 100%;
+  }
+
   &__box {
     width: 860px;
     margin: 0 auto;
     padding-top: 40px;
+
+    @media screen and (max-width: $phone-width) {
+      width: 100%;
+    }
   }
 
   &__ttl {
@@ -226,6 +238,11 @@ $phone-width: 480px;
     color: #4d4d4d;
     border-bottom: 2px dashed #6bc04b;
     padding-bottom: 15px;
+
+    @media screen and (max-width: $phone-width) {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 
   &__contents {
@@ -234,15 +251,35 @@ $phone-width: 480px;
     border: 5px solid #ea6cb0;
     margin-top: 15px;
 
+    @media screen and (max-width: $phone-width) {
+      border: none;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+    }
+
     & > li {
       float: left;
       width: 25%;
       height: 213px;
       border-right: 2px solid #ea6cb0;
 
+      @media screen and (max-width: $phone-width) {
+        width: 85%;
+        float: none;
+        border: 2px solid #ea6cb0;
+        margin: 0 auto;
+        margin-top: 5px;
+      }
+
       &:nth-child(4) {
         border-right: none;
         width: 200px;
+
+        @media screen and (max-width: $phone-width) {
+          border: 2px solid #ea6cb0;
+          width: 85%;
+        }
       }
     }
 
@@ -265,6 +302,10 @@ $phone-width: 480px;
       background-repeat: no-repeat;
       width: 207px;
       height: 137px;
+
+      @media screen and (max-width: $phone-width) {
+        margin: 0 auto;
+      }
     }
 
     &__img-sales {
@@ -272,6 +313,10 @@ $phone-width: 480px;
       background-repeat: no-repeat;
       width: 207px;
       height: 137px;
+
+      @media screen and (max-width: $phone-width) {
+        margin: 0 auto;
+      }
     }
 
     &__img-call {
@@ -279,6 +324,10 @@ $phone-width: 480px;
       background-repeat: no-repeat;
       width: 207px;
       height: 137px;
+
+      @media screen and (max-width: $phone-width) {
+        margin: 0 auto;
+      }
     }
 
     &__img-comp {
@@ -286,6 +335,10 @@ $phone-width: 480px;
       background-repeat: no-repeat;
       width: 207px;
       height: 137px;
+
+      @media screen and (max-width: $phone-width) {
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -294,10 +347,19 @@ $phone-width: 480px;
   float: left;
   width: 995px;
 
+  @media screen and (max-width: $phone-width) {
+    width: 100%;
+  }
+
   &__box {
     width: 860px;
     margin: 0 auto;
     padding-top: 40px;
+
+    @media screen and (max-width: $phone-width) {
+      float: none;
+      width: 100%;
+    }
   }
 
   &__ttl {
@@ -306,12 +368,23 @@ $phone-width: 480px;
     color: #4d4d4d;
     border-bottom: 2px dashed #6bc04b;
     padding-bottom: 15px;
+
+    @media screen and (max-width: $phone-width) {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 
   &__contents {
     margin-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px dashed #666666;
+
+    @media screen and (max-width: $phone-width) {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 15px;
+    }
 
     &__date {
       float: left;
